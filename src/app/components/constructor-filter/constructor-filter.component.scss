@@ -1,0 +1,27 @@
+.floors{
+  display: flex;
+}
+
+.floor{
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+.floor-1{
+  background: url('../../../assets/floor-1-preview.jpeg') top center;
+  background-size: cover;
+}
+
+.floor-2{
+  background: url('../../../assets/floor-2-preview.jpeg') top center;
+  background-size: cover;
+}
+
+.floor-3{
+  background: url('../../../assets/floor-3-preview.jpeg') top center;
+  background-size: cover;
+}
+
+
+
