@@ -1,6 +1,10 @@
 <p>constructor-content works!</p>
 
 
-<div *ngIf="floor">
-  <div class="floor-content {{floor}}">  {{floor}}</div>
+<div *ngIf="floor; else default_floor">
+  <div class="floor-content {{floor}}"></div>
 </div>
+
+<ng-template #default_floor>
+  <div class="floor-content floor-1"></div>
+</ng-template>

@@ -2,9 +2,9 @@
   <mat-step [stepControl]="firstFormGroup">
     <ng-template matStepLabel>Пол</ng-template>
     <div class="floors">
-      <div class="floor floor-1" (click)="floor('red')">1</div>
-      <div class="floor floor-2" (click)="floor('yellow')">2</div>
-      <div class="floor floor-3" (click)="floor('brown')">3</div>
+      <div class="floor floor-1" (click)="floor('floor-1')" [ngClass]="[floorClass=='floor-1' ? 'active' : '']"></div>
+      <div class="floor floor-2" (click)="floor('floor-2')" [ngClass]="[floorClass=='floor-2' ? 'active' : '']"></div>
+      <div class="floor floor-3" (click)="floor('floor-3')" [ngClass]="[floorClass=='floor-3' ? 'active' : '']"></div>
     </div>
 
     <div>
