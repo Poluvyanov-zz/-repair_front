@@ -1,4 +1,6 @@
 .floor-content {
+  position: absolute;
+  top: 68px;
   width: 600px;
   height: 400px;
 
@@ -17,5 +19,50 @@
 
 .floor-3 {
   background: url('../../../assets/floor-3.png') top center;
+  background-size: cover;
+}
+
+//walls
+.wall-content {
+  width: 600px;
+  height: 400px;
+}
+
+.wall-1 {
+  background: url('../../../assets/wall-1.png') top center;
+  background-size: cover;
+}
+
+.wall-2 {
+  background: url('../../../assets/wall-2.png') top center;
+  background-size: cover;
+}
+
+.wall-3 {
+  background: url('../../../assets/wall-3.png') top center;
+  background-size: cover;
+}
+
+
+//doors
+.door-content {
+  position: absolute;
+  top: 68px;
+  width: 600px;
+  height: 400px;
+}
+
+.door-1 {
+  background: url('../../../assets/door-1.png') top center;
+  background-size: cover;
+}
+
+.door-2 {
+  background: url('../../../assets/door-2.png') top center;
+  background-size: cover;
+}
+
+.door-3 {
+  background: url('../../../assets/door-3.png') top center;
   background-size: cover;
 }

@@ -14,7 +14,12 @@
   </mat-step>
   <mat-step [stepControl]="secondFormGroup">
 
-    <ng-template matStepLabel>Fill out your address</ng-template>
+    <ng-template matStepLabel>Стены</ng-template>
+    <div class="walls">
+      <div class="wall wall-1" (click)="wall('wall-1')" [ngClass]="[wallClass=='wall-1' ? 'active' : '']"></div>
+      <div class="wall wall-2" (click)="wall('wall-2')" [ngClass]="[wallClass=='wall-2' ? 'active' : '']"></div>
+      <div class="wall wall-3" (click)="wall('wall-3')" [ngClass]="[wallClass=='wall-3' ? 'active' : '']"></div>
+    </div>
     <div>
       <button mat-button matStepperPrevious>Back</button>
       <button mat-button matStepperNext>Next</button>
@@ -23,7 +28,11 @@
   </mat-step>
   <mat-step>
     <ng-template matStepLabel>Done</ng-template>
-    You are now done.
+    <div class="doors">
+      <div class="door door-1" (click)="door('door-1')" [ngClass]="[doorClass=='door-1' ? 'active' : '']"></div>
+      <div class="door door-2" (click)="door('door-2')" [ngClass]="[doorClass=='door-2' ? 'active' : '']"></div>
+      <div class="door door-3" (click)="door('door-3')" [ngClass]="[doorClass=='door-3' ? 'active' : '']"></div>
+    </div>
     <div>
       <button mat-button matStepperPrevious>Back</button>
       <button mat-button (click)="stepper.reset()">Reset</button>

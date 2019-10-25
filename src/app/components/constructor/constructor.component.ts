@@ -8,6 +8,8 @@ import {Component, OnInit} from '@angular/core';
 export class ConstructorComponent implements OnInit {
 
   floor: string;
+  wall: string;
+  door: string;
 
   constructor() {
   }
@@ -15,8 +17,16 @@ export class ConstructorComponent implements OnInit {
   ngOnInit() {
   }
 
-  dataChangeHandler(e) {
+  dataChangeHandlerFloor(e) {
     this.floor = e;
+  }
+
+  dataChangeHandlerWall(e) {
+    this.wall = e;
+  }
+
+  dataChangeHandlerDoor(e) {
+    this.door = e;
   }
 
 }

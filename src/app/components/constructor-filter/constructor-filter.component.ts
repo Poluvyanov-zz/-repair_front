@@ -8,9 +8,13 @@ import {$e} from 'codelyzer/angular/styles/chars';
   styleUrls: ['./constructor-filter.component.scss']
 })
 export class ConstructorFilterComponent implements OnInit {
-  @Output() dataChanged: EventEmitter<any> = new EventEmitter<any>();
+  @Output() dataChangedFloor: EventEmitter<any> = new EventEmitter<any>();
+  @Output() dataChangedWall: EventEmitter<any> = new EventEmitter<any>();
+  @Output() dataChangedDoor: EventEmitter<any> = new EventEmitter<any>();
   isLinear = false;
   floorClass: string;
+  wallClass: string;
+  doorClass: string;
 
 
   constructor() {
@@ -18,12 +22,25 @@ export class ConstructorFilterComponent implements OnInit {
 
   ngOnInit() {
     this.floorClass = 'floor-1';
+    this.wallClass = 'wall-1';
   }
 
   floor(e) {
     this.floorClass = e;
-    console.log(e);
-    this.dataChanged.emit(e);
+    console.log('dataChangedFloor', e);
+    this.dataChangedFloor.emit(e);
+  }
+
+  wall(e) {
+    this.wallClass = e;
+    console.log('dataChangedWall', e);
+    this.dataChangedWall.emit(e);
+  }
+
+  door(e) {
+    this.doorClass = e;
+    console.log('dataChangedDoor',  this.doorClass);
+    this.dataChangedDoor.emit(e);
   }
 
 }

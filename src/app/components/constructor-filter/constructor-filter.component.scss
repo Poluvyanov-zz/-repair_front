@@ -31,7 +31,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  content:"";
+  content: "";
 }
 
 
@@ -41,6 +41,70 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  content:"";
+  content: "";
 }
+
+
+//WALLS
+.walls {
+  display: flex;
+}
+
+
+.wall {
+  cursor: pointer;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+.wall-1 {
+  background: url('../../../assets/wall-1-preview.gif') top center;
+  background-size: cover;
+}
+
+.wall-2 {
+  background: url('../../../assets/wall-2-preview.png') top center;
+  background-size: cover;
+}
+
+.wall-3 {
+  background: url('../../../assets/wall-3-preview.gif') top center;
+  background-size: cover;
+}
+
+
+//DOORS
+.doors {
+  display: flex;
+}
+
+
+.door {
+  cursor: pointer;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+.door-1 {
+  background: url('../../../assets/door-1-preview.png') top center;
+  background-size: cover;
+}
+
+.door-2 {
+  background: url('../../../assets/door-2-preview.png') top center;
+  background-size: cover;
+}
+
+.door-3 {
+  background: url('../../../assets/door-3-preview.png') top center;
+  background-size: cover;
+}
+
+
+
+
 

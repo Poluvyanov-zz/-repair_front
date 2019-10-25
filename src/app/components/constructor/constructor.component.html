@@ -9,14 +9,17 @@
   <mat-grid-tile
     [colspan]="1"
     [rowspan]="6">
-    <app-constructor-filter (dataChanged)='dataChangeHandler($event)'></app-constructor-filter>
+    <app-constructor-filter (dataChangedFloor)='dataChangeHandlerFloor($event)'
+                            (dataChangedWall)='dataChangeHandlerWall($event)'
+                            (dataChangedDoor)='dataChangeHandlerDoor($event)'
+    ></app-constructor-filter>
 
   </mat-grid-tile>
 
   <mat-grid-tile
     [colspan]="3"
     [rowspan]="5">
-    <app-constructor-content [floor]="floor"></app-constructor-content>
+    <app-constructor-content [floor]="floor" [wall]="wall" [door]="door"></app-constructor-content>
 
   </mat-grid-tile>
 

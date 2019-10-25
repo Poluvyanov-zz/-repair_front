@@ -1,6 +1,23 @@
 <p>constructor-content works!</p>
 
 
+
+<div *ngIf="wall; else default_wall">
+  <div class="wall-content {{wall}}"></div>
+</div>
+<ng-template #default_wall>
+  <div class="wall-content wall-1"></div>
+</ng-template>
+
+
+<div *ngIf="door; else default_door">
+  <div class="door-content {{door}}"></div>
+</div>
+<ng-template #default_door>
+  <div class="door-content door-1"></div>
+</ng-template>
+
+
 <div *ngIf="floor; else default_floor">
   <div class="floor-content {{floor}}"></div>
 </div>
@@ -8,3 +25,4 @@
 <ng-template #default_floor>
   <div class="floor-content floor-1"></div>
 </ng-template>
+
